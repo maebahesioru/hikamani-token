@@ -2,18 +2,36 @@
   "name": "Hikamani Coin",
   "symbol": "HMC",
   "description": "ヒカマニ界隈のコミュニティトークン。Hikamani Games・ヒカマニツールズ・ヒカマニnote・マイクラサーバー・レンタルサーバーなど、界隈のサービスで使えるコミュニティ通貨。フェアローンチ・固定供給・所有権放棄（renounce）済み。",
-  "image": "https://raw.githubusercontent.com/maebahesioru/hikamani-token/main/assets/hmc_logo.png",
+  "image": "https://raw.githubusercontent.com/maebahesioru/hikamani-token/main/assets/logo_512.png",
   "external_url": "",
   "attributes": [
-    { "trait_type": "総供給量", "value": "1,000,000,000 HMC" },
-    { "trait_type": "チェーン", "value": "Solana (Token-2022)" },
-    { "trait_type": "ローンチ方式", "value": "フェアローンチ" },
-    { "trait_type": "供給方式", "value": "固定供給 (上限あり)" },
-    { "trait_type": "所有権", "value": "renounce 済み" }
+    {
+      "trait_type": "総供給量",
+      "value": "1,000,000,000 HMC"
+    },
+    {
+      "trait_type": "チェーン",
+      "value": "Solana (Token-2022)"
+    },
+    {
+      "trait_type": "ローンチ方式",
+      "value": "フェアローンチ"
+    },
+    {
+      "trait_type": "供給方式",
+      "value": "固定供給 (上限あり)"
+    },
+    {
+      "trait_type": "所有権",
+      "value": "renounce 済み"
+    }
   ],
   "properties": {
     "files": [
-      { "uri": "https://raw.githubusercontent.com/maebahesioru/hikamani-token/main/assets/hmc_logo.png", "type": "image/png" }
+      {
+        "uri": "https://raw.githubusercontent.com/maebahesioru/hikamani-token/main/assets/logo_512.png",
+        "type": "image/png"
+      }
     ],
     "category": "image",
     "creators": []
