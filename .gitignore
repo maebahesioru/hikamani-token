@@ -14,3 +14,7 @@ node_modules/
 # ログ・キャッシュ
 *.log
 .DS_Store
+
+# ローカル状態ファイル(公開アドレスだが管理外)
+.mint_address
+atas.json
