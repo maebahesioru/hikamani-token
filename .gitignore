@@ -1,0 +1,16 @@
+# 秘密鍵・アドレス情報は絶対に公開しない
+keys/
+addresses.json
+*.keypair
+faucet.json
+
+# ローカルバリデータ
+.ledger/
+ledger*/
+
+# node
+node_modules/
+
+# ログ・キャッシュ
+*.log
+.DS_Store
