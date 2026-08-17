@@ -10,6 +10,8 @@ const {
 const RPC = process.argv[2] || 'http://127.0.0.1:8899';
 const MINT = process.argv[3] || 'C1im4d84j1k5hPZriivogQqd4XZg8Ef2cjrXTtvu34Fe';
 const DECIMALS = 9;
+const KEYDIR = process.argv[4] || path.join(__dirname, '..', 'keys');
+const ADDRFILE = process.argv[5] || path.join(__dirname, '..', 'addresses.json');
 const conn = new Connection(RPC, 'confirmed');
 
 const UNIT = 10n ** BigInt(DECIMALS);
@@ -19,13 +21,13 @@ const OPS = 200000000n * UNIT;         // 20%
 const AIRDROP = 300000000n * UNIT;     // 30%
 
 function load(role) {
-  return Keypair.fromSecretKey(Uint8Array.from(JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'keys', `${role}.json`), 'utf8'))));
+  return Keypair.fromSecretKey(Uint8Array.from(JSON.parse(fs.readFileSync(path.join(KEYDIR, `${role}.json`), 'utf8'))));
 }
 
 async function main() {
   const treasury = load('treasury');
   const mint = new PublicKey(MINT);
-  const addrs = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'addresses.json'), 'utf8'));
+  const addrs = JSON.parse(fs.readFileSync(ADDRFILE, 'utf8'));
   const ata = {};
   for (const role of ['treasury', 'reward', 'ops', 'airdrop']) {
     ata[role] = getAssociatedTokenAddressSync(mint, new PublicKey(addrs[role]), false, TOKEN_2022_PROGRAM_ID);

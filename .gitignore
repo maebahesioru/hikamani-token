@@ -18,3 +18,16 @@ node_modules/
 # ローカル状態ファイル(公開アドレスだが管理外)
 .mint_address
 atas.json
+
+# devnet専用キー(秘密!)
+devnet-keys/
+devnet_addresses.json
+devnet_mint.txt
+deploy_devnet.log
+watch_faucet.log
+
+# mainnet(秘密)
+mainnet-keys/
+mainnet_addresses.json
+mainnet_mint.txt
+deploy_mainnet.log
