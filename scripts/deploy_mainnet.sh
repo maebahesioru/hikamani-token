@@ -40,6 +40,7 @@ done
 log "ATA作成完了"
 
 # ミント+配分+renounce
-node scripts/mint-distribute.js $RPC "$MINT" mainnet-keys mainnet_addresses.json 2>&1 | tee -a deploy_mainnet.log
+# 注意: パイプにするとset -eが効かずエラーを飲み込む。nodeの終了コードを直接判定する
+node scripts/mint-distribute.js $RPC "$MINT" mainnet-keys mainnet_addresses.json || { log "mint-distribute失敗"; exit 1; }
 
 log "DONE MINT=$MINT"

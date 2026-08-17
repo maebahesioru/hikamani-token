@@ -53,6 +53,22 @@ node scripts/create-token.js http://127.0.0.1:8899 <METADATA_URI>
 同じスクリプトをRPC URLとメタデータURIを変えて実行するだけ。
 devnetのSOLはフォーセット(faucet.solana.com)から入手。
 
+## 🚀 発行状況(mainnet・2026-08-17)
+
+**Hikamani Coin (HMC) は Solana メインネットに発行済み・検証済み**
+
+| 項目 | 値 |
+|---|---|
+| ミントアドレス | `DZS1tKGJsgwqYGNMpQw5KpjBqi8shox8SE28vJhNfxM9` |
+| Solscan | https://solscan.io/token/DZS1tKGJsgwqYGNMpQw5KpjBqi8shox8SE28vJhNfxM9 |
+| 名前/シンボル | Hikamani Coin / HMC |
+| 供給量 | 1,000,000,000 HMC(10億・固定) |
+| decimals | 9 |
+| 配分 | reward 500M(50%) / ops 200M(20%) / airdrop 300M(30%) |
+| mint権限 | **NULL(renounce済み・誰も発行できない)** |
+| renounce tx | `4DLmq9Ls6m6PVuosCuhB6JXgfhHuKpayuXZaqDVvBRzXWCSPDueoTuPCAFzr5sAaZciAZsGKEeJiYuHprKa2nQK7` |
+| 配布スケジュール | 報酬プール=ゲーム内循環 / 運営=12ヶ月リニア / エアドロ=6ヶ月リニア |
+
 ## トークノミクス
 
 | 項目 | 数量 | 割合 |
